@@ -1,30 +1,4 @@
 
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-            
-
-                
-                
-
-        
-
-                        
-
 'use client';
 import { useState, useEffect } from 'react';
 import { Save, Globe, User, Mail, Phone, Calendar, Lock, X, CheckCircle, Loader } from 'lucide-react';
@@ -432,7 +406,7 @@ export default function Settings() {
     return (
         <div className="min-h-screen bg-gray-50 p-3 sm:p-6 font-sans" dir={isRTL ? 'rtl' : 'ltr'}>
             <div className="max-w-4xl mx-auto">
-                {}
+                
                 <div className="mb-6">
                     <h1 className="text-3xl lg:text-5xl font-bold text-gray-900">{t.title}</h1>
                     {session.user.role === 'admin' && (
@@ -440,14 +414,14 @@ export default function Settings() {
                     )}
                 </div>
 
-                {}
+                
                 {error && (
                     <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg">
                         <p className="text-red-700 text-sm">{error}</p>
                     </div>
                 )}
 
-                {}
+                
                 <div className="bg-white rounded-xl shadow-md p-4 sm:p-6 mb-6">
                     <div className="flex items-center gap-2 mb-6">
                         <User className="text-[#192A3D]" size={24} />
@@ -456,7 +430,7 @@ export default function Settings() {
 
                     <div className="space-y-6">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            {}
+                            
                             <div>
                                 <label className="block text-start text-sm font-medium text-gray-700 mb-2">
                                     {t.firstName}
@@ -470,7 +444,7 @@ export default function Settings() {
                                 />
                             </div>
 
-                            {}
+                            
                             <div>
                                 <label className="block text-start text-sm font-medium text-gray-700 mb-2">
                                     {t.lastName}
@@ -484,7 +458,7 @@ export default function Settings() {
                                 />
                             </div>
 
-                            {}
+                            
                             <div>
                                 <label className="block text-start text-sm font-medium text-gray-700 mb-2">
                                     {t.username}
@@ -498,7 +472,7 @@ export default function Settings() {
                                 />
                             </div>
 
-                            {}
+                            
                             <div>
                                 <label className="block text-start text-sm font-medium text-gray-700 mb-2">
                                     {t.email}
@@ -512,7 +486,7 @@ export default function Settings() {
                                 />
                             </div>
 
-                            {}
+                            
                             <div>
                                 <label className="block text-start text-sm font-medium text-gray-700 mb-2">
                                     {t.phone}
@@ -526,7 +500,7 @@ export default function Settings() {
                                 />
                             </div>
 
-                            {}
+                            
                             <div>
                                 <label className="block text-start text-sm font-medium text-gray-700 mb-2">
                                     {t.dateOfBirth}
@@ -542,7 +516,7 @@ export default function Settings() {
                     </div>
                 </div>
 
-                {}
+                
                 <div className="bg-white rounded-xl shadow-md p-4 sm:p-6 mb-6">
                     <div className="flex items-center gap-2 mb-6">
                         <Lock className="text-[#192A3D]" size={24} />
@@ -562,7 +536,7 @@ export default function Settings() {
                     </div>
                 </div>
 
-                {}
+                
                 <div className="flex justify-end gap-4">
                     <button
                         onClick={handleSaveClick}
@@ -579,7 +553,7 @@ export default function Settings() {
                 </div>
             </div>
 
-            {}
+            
             {showConfirmModal && (
                 <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
                     <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-6" dir={isRTL ? 'rtl' : 'ltr'}>
@@ -617,7 +591,7 @@ export default function Settings() {
                 </div>
             )}
 
-            {}
+            
             {showPasswordModal && (
                 <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
                     <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-6" dir={isRTL ? 'rtl' : 'ltr'}>
@@ -710,7 +684,7 @@ export default function Settings() {
                 </div>
             )}
 
-            {}
+            
             {showSuccessModal && (
                 <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
                     <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-6 text-center" dir={isRTL ? 'rtl' : 'ltr'}>

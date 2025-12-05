@@ -283,7 +283,7 @@ export const removeAuthToken = (): void => {
   if (!remainingCookie && !remainingLocal) {
     console.log(' تم حذف التوكن بنجاح من جميع المواقع');
   } else {
-    console.warn('⚠️ التوكن لا يزال موجوداً:', { 
+    console.warn(' التوكن لا يزال موجوداً:', { 
       cookie: remainingCookie ? 'موجود' : 'محذوف',
       localStorage: remainingLocal ? 'موجود' : 'محذوف'
     });
@@ -291,7 +291,7 @@ export const removeAuthToken = (): void => {
 };
 
 export const clearAllAuthData = (): void => {
-  console.log('🧹 بدء تنظيف جميع بيانات المصادقة...');
+  console.log(' بدء تنظيف جميع بيانات المصادقة...');
   
   if (typeof document !== 'undefined') {
     const cookies = document.cookie.split(';');
@@ -309,37 +309,37 @@ export const clearAllAuthData = (): void => {
     const keysToRemove = ['authToken', 'user', 'token', 'session'];
     keysToRemove.forEach(key => {
       localStorage.removeItem(key);
-      console.log(`🗑️ حذف من localStorage: ${key}`);
+      console.log(` حذف من localStorage: ${key}`);
     });
   }
   
   if (typeof window !== 'undefined' && typeof sessionStorage !== 'undefined') {
     sessionStorage.clear();
-    console.log('🗑️ تم مسح sessionStorage');
+    console.log(' تم مسح sessionStorage');
   }
   
-  console.log('✅ تم تنظيف جميع بيانات المصادقة');
+  console.log(' تم تنظيف جميع بيانات المصادقة');
 };
 
 export const debugAuthToken = (): void => {
-  console.log('🔍 فحص حالة التوكن:');
+  console.log(' فحص حالة التوكن:');
   console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
   
   const cookieToken = getCookie('authToken');
-  console.log('📦 Cookies:');
-  console.log('  authToken:', cookieToken ? `موجود (${cookieToken.substring(0, 20)}...)` : '❌ غير موجود');
+  console.log(' Cookies:');
+  console.log('  authToken:', cookieToken ? `موجود (${cookieToken.substring(0, 20)}...)` : ' غير موجود');
   console.log('  All cookies:', document.cookie || 'فارغ');
   
   if (typeof window !== 'undefined' && typeof localStorage !== 'undefined') {
     const localToken = localStorage.getItem('authToken');
-    console.log('\n💾 localStorage:');
-    console.log('  authToken:', localToken ? `موجود (${localToken.substring(0, 20)}...)` : '❌ غير موجود');
-    console.log('  user:', localStorage.getItem('user') || '❌ غير موجود');
+    console.log('\n localStorage:');
+    console.log('  authToken:', localToken ? `موجود (${localToken.substring(0, 20)}...)` : ' غير موجود');
+    console.log('  user:', localStorage.getItem('user') || ' غير موجود');
     console.log('  All keys:', Object.keys(localStorage));
   }
   
   if (typeof window !== 'undefined' && typeof sessionStorage !== 'undefined') {
-    console.log('\n🗂️ sessionStorage:');
+    console.log('\n sessionStorage:');
     console.log('  Keys:', Object.keys(sessionStorage));
   }
   
@@ -370,7 +370,7 @@ if (typeof window !== 'undefined' && process.env.NODE_ENV === 'development') {
   (window as any).debugAuthToken = debugAuthToken;
   (window as any).clearAllAuthData = clearAllAuthData;
   (window as any).removeAuthToken = removeAuthToken;
-  console.log('🔧 دوال الاختبار متاحة في console:');
+  console.log(' دوال الاختبار متاحة في console:');
   console.log('  - debugAuthToken() : فحص حالة التوكن');
   console.log('  - clearAllAuthData() : حذف جميع البيانات');
   console.log('  - removeAuthToken() : حذف التوكن فقط');

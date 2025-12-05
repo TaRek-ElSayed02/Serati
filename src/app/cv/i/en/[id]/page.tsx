@@ -1,45 +1,4 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          
-          
-          
-          
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 'use client';
 import React from 'react';
 import {
@@ -223,7 +182,7 @@ const EnglishCV: React.FC = () => {
       `}</style>
       
       <div dir="ltr" className="min-h-screen bg-gray-100 p-8 print-container">
-        {}
+        
         <div className="print-hidden max-w-4xl mx-auto mb-4 flex justify-start">
           <button
             onClick={handlePrint}
@@ -236,15 +195,15 @@ const EnglishCV: React.FC = () => {
 
         <div className="max-w-4xl mx-auto bg-white shadow-xl grid grid-cols-12 cv-content">
 
-          {}
+          
           <div className="sidebar-column col-span-4 bg-gray-50 border-r border-gray-200 p-6 flex flex-col items-center space-y-8">
 
-            {}
+            
             <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-gray-300 shadow-md flex items-center justify-center bg-gray-200">
               <User className="w-16 h-16 text-gray-600" />
             </div>
 
-            {}
+            
             <section className="w-full text-left">
               <h3 className="text-xl font-bold text-gray-800 border-b pb-1 mb-3">Contact Information</h3>
               <div className="space-y-2 text-sm text-gray-600">
@@ -275,7 +234,7 @@ const EnglishCV: React.FC = () => {
               </div>
             </section>
 
-            {}
+            
             <section className="w-full text-left">
               <h3 className="text-xl justify-start font-bold text-gray-800 border-b pb-1 mb-3 flex items-center gap-2">
                 <Code className="w-5 h-5 text-gray-700" />
@@ -290,7 +249,7 @@ const EnglishCV: React.FC = () => {
               </div>
             </section>
 
-            {}
+            
             <section className="w-full text-left">
               <h3 className="text-xl justify-start font-bold text-gray-800 border-b pb-1 mb-3 flex items-center gap-2">
                 <Award className="w-5 h-5 text-gray-700" />
@@ -303,7 +262,7 @@ const EnglishCV: React.FC = () => {
               </ul>
             </section>
 
-            {}
+            
             <section className="w-full text-left">
               <h3 className="text-xl justify-start font-bold text-gray-800 border-b pb-1 mb-3 flex items-center gap-2">
                 <Languages className="w-5 h-5 text-gray-700" />
@@ -321,16 +280,16 @@ const EnglishCV: React.FC = () => {
 
           </div>
 
-          {}
+          
           <div className="col-span-8 p-8">
 
-            {}
+            
             <header className="mb-8 pb-4 border-b-4 border-gray-600">
               <h1 className="text-4xl font-extrabold text-gray-900 mb-1">{personalInfo.name}</h1>
               <h2 className="text-2xl text-gray-600 font-semibold">{personalInfo.title}</h2>
             </header>
 
-            {}
+            
             <section className="mb-8">
               <h3 className="text-2xl justify-start font-bold text-gray-800 mb-3 pb-2 border-b-2 border-gray-300 flex items-center gap-2">
                 <User className="w-6 h-6 text-gray-700" />
@@ -339,7 +298,7 @@ const EnglishCV: React.FC = () => {
               <p className="text-gray-700 leading-relaxed text-left">{summary}</p>
             </section>
 
-            {}
+            
             <section className="mb-8">
               <h3 className="text-2xl justify-start font-bold text-gray-800 mb-4 pb-2 border-b-2 border-gray-300 flex items-center gap-2">
                 <Briefcase className="w-6 h-6 text-gray-700" />
@@ -363,7 +322,7 @@ const EnglishCV: React.FC = () => {
               ))}
             </section>
 
-            {}
+            
             <section className="mb-8">
               <h3 className="text-2xl justify-start font-bold text-gray-800 mb-4 pb-2 border-b-2 border-gray-300 flex items-center gap-2">
                 <GraduationCap className="w-6 h-6 text-gray-700" />
@@ -383,7 +342,7 @@ const EnglishCV: React.FC = () => {
               ))}
             </section>
 
-            {}
+            
             <section className="mb-8">
               <h3 className="text-2xl justify-start font-bold text-gray-800 mb-4 pb-2 border-b-2 border-gray-300 flex items-center gap-2">
                 <FolderOpen className="w-6 h-6 text-gray-700" />
@@ -404,7 +363,7 @@ const EnglishCV: React.FC = () => {
               ))}
             </section>
 
-            {}
+            
             {customSections.map((section) => (
               <section key={section.id} className="mb-8">
                 <h3 className="text-2xl justify-start font-bold text-gray-800 mb-4 pb-2 border-b-2 border-gray-300 flex items-center gap-2">

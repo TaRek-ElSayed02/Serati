@@ -130,7 +130,7 @@ export default function CVManagement() {
   return (
     <div className="min-h-screen bg-gray-50 p-3 sm:p-6" dir="rtl">
 
-      {}
+      
       {deleteModal.isOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
           <div className="bg-white rounded-lg shadow-lg max-w-md w-full">
@@ -161,7 +161,7 @@ export default function CVManagement() {
         </div>
       )}
 
-      {}
+      
       {viewModal.isOpen && viewModal.cv && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
           <div className="bg-white rounded-lg shadow-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
@@ -207,7 +207,7 @@ export default function CVManagement() {
         </div>
       )}
 
-      {}
+      
       {editModal.isOpen && editModal.cv && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
           <div className="bg-white rounded-lg shadow-2xl w-[90%] max-h-[100vh] overflow-y-auto">
@@ -230,7 +230,7 @@ export default function CVManagement() {
       )}
 
       <div className="max-w-7xl mx-auto">
-        {}
+        
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
           <div>
             <div className="flex items-start justify-start gap-2 text-gray-600">
@@ -257,7 +257,7 @@ export default function CVManagement() {
           </div>
         </div>
 
-        {}
+        
         <div className="bg-white rounded-lg shadow-sm p-6 mb-6 border-r-4 border-[#192A3D]">
           <div className="flex items-center justify-between max-w-xs">
             <div>
@@ -270,7 +270,7 @@ export default function CVManagement() {
           </div>
         </div>
 
-        {}
+        
         {cvs.length === 0 && !isLoading && (
           <div className="bg-white rounded-lg shadow-sm p-12 text-center mb-6">
             <FileText size={64} className="mx-auto text-gray-400 mb-4" />
@@ -286,7 +286,7 @@ export default function CVManagement() {
           </div>
         )}
 
-        {}
+        
         {cvs.length > 0 && (
           <>
             <div className="bg-white rounded-lg shadow-sm mb-6 p-4">
@@ -302,7 +302,7 @@ export default function CVManagement() {
               </div>
             </div>
 
-            {}
+            
             <div className="bg-white rounded-lg shadow-sm mb-6 p-4">
               <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
                 <div className="flex items-center gap-2">
@@ -322,7 +322,7 @@ export default function CVManagement() {
               </div>
             </div>
 
-            {}
+            
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
               {paginatedCVs.map((cv) => (
                 <div key={cv.id} className="bg-white rounded-lg shadow-sm hover:shadow-md transition overflow-hidden">
@@ -360,7 +360,7 @@ export default function CVManagement() {
               ))}
             </div>
 
-            {}
+            
             {totalPages > 1 && (
               <div className="bg-white rounded-lg shadow-sm p-4">
                 <div className="flex flex-col sm:flex-row items-center justify-between gap-4">

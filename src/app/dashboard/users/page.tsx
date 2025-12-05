@@ -163,7 +163,7 @@ isSelfDelete: false
   const handleSaveUser = () => {
     if (!editModal.user) return;
 
-    const updateData: Record<string, any> = {};
+    const updateData: Record<string, any> = ;
     (Object.keys(editFormData) as Array<keyof typeof editFormData>).forEach(key => {
       const newValue = editFormData[key];
       const oldValue = editModal.user?.[key as keyof UserWithCVs];
@@ -253,7 +253,7 @@ isSelfDelete: false
 
   return (
     <div className="min-h-screen bg-gray-50 p-3 sm:p-6" dir="rtl">
-      {}
+      
       {cvEditModal.isOpen && cvEditModal.cvId && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[60] p-4">
           <div className="bg-white rounded-lg shadow-2xl w-[90%] max-h-[100vh] overflow-y-auto">
@@ -278,7 +278,7 @@ isSelfDelete: false
         </div>
       )}
 
-      {}
+      
       {cvsModal.isOpen && cvsModal.user && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
           <div className="bg-white rounded-lg shadow-lg max-w-6xl w-full max-h-[90vh] overflow-y-auto">
@@ -371,7 +371,7 @@ isSelfDelete: false
         </div>
       )}
 
-      {}
+      
       {deleteModal.isOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
           <div className="bg-white rounded-lg shadow-lg max-w-md w-full">
@@ -423,7 +423,7 @@ isSelfDelete: false
         </div>
       )}
 
-      {}
+      
       {editModal.isOpen && editModal.user && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
           <div className="bg-white rounded-lg shadow-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
@@ -441,7 +441,7 @@ isSelfDelete: false
               </div>
 
               <div className="space-y-6">
-                {}
+                
                 <div className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg">
                   <div className="w-16 h-16 rounded-full bg-[#192A3D] flex items-center justify-center text-white text-lg font-semibold">
                     {getInitials(editModal.user.firstname, editModal.user.lastname)}
@@ -454,9 +454,9 @@ isSelfDelete: false
                   </div>
                 </div>
 
-                {}
+                
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {}
+                  
                   <div className="space-y-2">
                     <label className="flex items-center gap-2 text-sm font-medium text-gray-700">
                       <User size={16} />
@@ -471,7 +471,7 @@ isSelfDelete: false
                     />
                   </div>
 
-                  {}
+                  
                   <div className="space-y-2">
                     <label className="flex items-center gap-2 text-sm font-medium text-gray-700">
                       <User size={16} />
@@ -486,7 +486,7 @@ isSelfDelete: false
                     />
                   </div>
 
-                  {}
+                  
                   <div className="space-y-2">
                     <label className="flex items-center gap-2 text-sm font-medium text-gray-700">
                       <User size={16} />
@@ -501,7 +501,7 @@ isSelfDelete: false
                     />
                   </div>
 
-                  {}
+                  
                   <div className="space-y-2">
                     <label className="flex items-center gap-2 text-sm font-medium text-gray-700">
                       <Mail size={16} />
@@ -516,7 +516,7 @@ isSelfDelete: false
                     />
                   </div>
 
-                  {}
+                  
                   <div className="space-y-2">
                     <label className="flex items-center gap-2 text-sm font-medium text-gray-700">
                       <Phone size={16} />
@@ -531,7 +531,7 @@ isSelfDelete: false
                     />
                   </div>
 
-                  {}
+                  
                   <div className="space-y-2">
                     <label className="flex items-center gap-2 text-sm font-medium text-gray-700">
                       <Cake size={16} />
@@ -545,7 +545,7 @@ isSelfDelete: false
                     />
                   </div>
 
-                  {}
+                  
                   <div className="space-y-2 md:col-span-2">
                     <label className="flex items-center gap-2 text-sm font-medium text-gray-700">
                       <Shield size={16} />
@@ -584,7 +584,7 @@ isSelfDelete: false
                   </div>
                 </div>
 
-                {}
+                
                 <div className="flex gap-3 justify-end pt-4 border-t border-gray-200">
                   <button
                     onClick={closeEditModal}

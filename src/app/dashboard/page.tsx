@@ -187,7 +187,6 @@ refetchOnMount: false,
 
   useEffect(() => {
     if (status !== 'authenticated') return;
-    // تأكد من حفظ التوكن محليًا إذا كان موجودًا في الجلسة ولم يُحفظ بعد
     const hasToken = validateToken();
     const sessUser = session?.user as { token?: string } | undefined;
     if (!hasToken && sessUser?.token) {

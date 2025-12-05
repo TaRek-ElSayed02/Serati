@@ -59,13 +59,11 @@ const LoginPage = () => {
         }
         console.error("Login error:", result.error);
       } else {
-        // حفظ التوكن في التخزين المحلي/الكوكيز قبل الانتقال للوحة التحكم
         const newSession = await getSession();
         const userWithToken = newSession?.user as { token?: string } | undefined;
         if (userWithToken?.token) {
           setAuthToken(userWithToken.token, 30);
         }
-        // استخدام window.location.href لإجبار إعادة تحميل الصفحة وتحديث الجلسة
         window.location.href = "/dashboard";
       }
     } catch (error) {
@@ -241,6 +239,7 @@ const LoginPage = () => {
           </p>
         </div>
       </div>
+
 
       <style jsx>{`
 @import url('https:

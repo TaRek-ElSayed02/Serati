@@ -1,37 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-          
-
-            
-
-
-
-
-          
-
-          
-
-          
-
-
-          
-
 'use client';
 import React from 'react';
 import {
@@ -78,7 +44,7 @@ const personalInfo = {
   email: 'tarekelsayed@gmail.com',
   phone: '+201098765432',
   location: 'القاهرة، مصر',
-website: 'https:
+website: 'https://www.google.com',
 };
 
 const socialLinks: SocialLink[] = [
@@ -209,7 +175,7 @@ const ArabicCV: React.FC = () => {
       `}</style>
       
       <div dir="ltr" className="min-h-screen bg-gray-100 p-8 text-right print-container">
-        {}
+        
         <div className="print-hidden max-w-4xl mx-auto mb-4 flex justify-end">
           <button
             onClick={handlePrint}
@@ -222,15 +188,15 @@ const ArabicCV: React.FC = () => {
 
         <div className="max-w-4xl mx-auto bg-white shadow-xl grid grid-cols-12 cv-content">
           
-          {}
+          
           <div className="col-span-4 bg-gray-50 border-l border-gray-200 p-6 flex flex-col items-center space-y-8 order-2">
             
-            {}
+            
             <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-gray-300 shadow-md flex items-center justify-center bg-gray-200">
               <User className="w-16 h-16 text-gray-600" />
             </div>
 
-            {}
+            
             <section className="w-full text-right">
               <h3 className="text-xl font-bold text-gray-800 border-b pb-1 mb-3">معلومات التواصل</h3>
               <div className="space-y-2 text-sm text-gray-600">
@@ -261,7 +227,7 @@ const ArabicCV: React.FC = () => {
               </div>
             </section>
 
-            {}
+            
             <section className="w-full text-right">
               <h3 className="text-xl font-bold text-gray-800 border-b pb-1 mb-3 flex items-center gap-2 justify-end">
                 المهارات
@@ -276,7 +242,7 @@ const ArabicCV: React.FC = () => {
               </div>
             </section>
 
-            {}
+            
             <section className="w-full text-right">
               <h3 className="text-xl font-bold text-gray-800 border-b pb-1 mb-3 flex items-center gap-2 justify-end">
                 اللغات
@@ -294,16 +260,16 @@ const ArabicCV: React.FC = () => {
 
           </div>
 
-          {}
+          
           <div className="col-span-8 p-8 order-1">
             
-            {}
+            
             <header className="mb-8 pb-4 border-b-4 border-gray-600">
               <h1 className="text-4xl font-extrabold text-gray-900 mb-1">{personalInfo.name}</h1>
               <h2 className="text-2xl text-gray-600 font-semibold">{personalInfo.title}</h2>
             </header>
 
-            {}
+            
             <section className="mb-8">
               <h3 className="text-2xl font-bold text-gray-800 mb-3 pb-2 border-b-2 border-gray-300 flex items-center gap-2 justify-end">
                 نبذة عني
@@ -312,7 +278,7 @@ const ArabicCV: React.FC = () => {
               <p className="text-gray-700 leading-relaxed text-right">{summary}</p>
             </section>
             
-            {}
+            
             <section className="mb-8">
               <h3 className="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-gray-300 flex items-center gap-2 justify-end">
                 التعليم
@@ -332,7 +298,7 @@ const ArabicCV: React.FC = () => {
               ))}
             </section>
 
-            {}
+            
             <section className="mb-8">
               <h3 className="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-gray-300 flex items-center gap-2 justify-end">
                 الخبرة العملية
@@ -356,7 +322,7 @@ const ArabicCV: React.FC = () => {
               ))}
             </section>
             
-            {}
+            
             <section className="mb-8">
               <h3 className="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-gray-300 flex items-center gap-2 justify-end">
                 الشهادات
@@ -369,7 +335,7 @@ const ArabicCV: React.FC = () => {
               </ul>
             </section>
 
-            {}
+            
             <section className="mb-8">
               <h3 className="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-gray-300 flex items-center gap-2 justify-end">
                 المشاريع
@@ -390,7 +356,7 @@ const ArabicCV: React.FC = () => {
               ))}
             </section>
 
-            {}
+            
             {customSections.map((section) => (
               <section key={section.id} className="mb-8">
                 <h3 className="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-gray-300 flex items-center gap-2 justify-end">

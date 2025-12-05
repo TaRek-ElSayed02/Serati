@@ -185,7 +185,7 @@ website: 'https:
       `}</style>
       
       <div className="min-h-screen bg-gray-50 py-8 px-4">
-        {}
+        
         <div className="max-w-4xl mx-auto mb-4 print-hide">
           <button
             onClick={handleDownloadPDF}
@@ -197,7 +197,7 @@ website: 'https:
         </div>
 
         <div ref={cvRef} data-cv-content className="max-w-4xl mx-auto bg-white shadow-lg">
-          {}
+          
           <div className="border-b-2 border-gray-300 p-8">
             <h1 className="text-4xl font-bold mb-2 text-gray-900">{personalInfo.name}</h1>
             <h2 className="text-xl text-gray-700 mb-4">{personalInfo.title}</h2>
@@ -223,7 +223,7 @@ website: 'https:
 
             <div className="flex flex-wrap gap-3 mt-4">
               {socialLinks.map((link, index) => (
-<a key={index} href={`https:
+<a key={index} href={`https://www.google.com`}>
                   {getIcon(link.icon)}
                   <span>{link.platform}</span>
                 </a>
@@ -231,9 +231,9 @@ website: 'https:
             </div>
           </div>
 
-          {}
+          
           <div className="p-8">
-            {}
+            
             <section className="mb-8">
               <h3 className="text-2xl font-bold text-gray-800 mb-3 pb-2 border-b-2 border-gray-300">
                 Professional Summary
@@ -241,7 +241,7 @@ website: 'https:
               <p className="text-gray-700 leading-relaxed text-justify">{summary}</p>
             </section>
 
-            {}
+            
             <section className="mb-8">
               <h3 className="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-gray-300 flex items-center gap-2">
                 <Briefcase className="w-6 h-6" />
@@ -265,7 +265,7 @@ website: 'https:
               ))}
             </section>
 
-            {}
+            
             <section className="mb-8">
               <h3 className="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-gray-300 flex items-center gap-2">
                 <GraduationCap className="w-6 h-6" />
@@ -285,7 +285,7 @@ website: 'https:
               ))}
             </section>
 
-            {}
+            
             <section className="mb-8">
               <h3 className="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-gray-300 flex items-center gap-2">
                 <Code className="w-6 h-6" />
@@ -300,7 +300,7 @@ website: 'https:
               </div>
             </section>
 
-            {}
+            
             <section className="mb-8">
               <h3 className="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-gray-300 flex items-center gap-2">
                 <Award className="w-6 h-6" />
@@ -313,7 +313,7 @@ website: 'https:
               </ul>
             </section>
 
-            {}
+            
             <section className="mb-8">
               <h3 className="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-gray-300 flex items-center gap-2">
                 <FolderOpen className="w-6 h-6" />
@@ -324,11 +324,10 @@ website: 'https:
                   <h4 className="text-lg font-semibold text-gray-800">{project.name}</h4>
                   <p className="text-gray-700 mb-2">{project.description}</p>
                   <div className="flex flex-wrap gap-2 mb-1">
-                    {
-}
+
                   </div>
                   {project.link && (
-<a href={`https:
+<a href={`https://www.google.com`}>
                       {project.link}
                     </a>
                   )}
@@ -336,7 +335,7 @@ website: 'https:
               ))}
             </section>
 
-            {}
+            
             <section className="mb-8">
               <h3 className="text-2xl font-bold text-gray-800 mb-4 pb-2 border-b-2 border-gray-300 flex items-center gap-2">
                 <Languages className="w-6 h-6" />
@@ -352,9 +351,8 @@ website: 'https:
               </div>
             </section>
 
-            {}
-            {
-}
+            
+            
           </div>
         </div>
       </div>
