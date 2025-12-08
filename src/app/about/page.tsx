@@ -15,7 +15,6 @@ const handleClick = () => {
       <Navbar />
       
       <main className="flex-grow" dir="rtl">
-        {/* Hero Section */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-0">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
@@ -28,7 +27,6 @@ const handleClick = () => {
           </div>
         </section>
 
-        {/* Our Story */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="bg-[#1A2035] rounded-2xl p-8 md:p-12 border border-gray-800">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">قصتنا</h2>
@@ -46,7 +44,6 @@ const handleClick = () => {
           </div>
         </section>
 
-        {/* How It Works */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
@@ -58,7 +55,6 @@ const handleClick = () => {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-            {/* Process Card */}
             <div className="bg-[#1A2035] rounded-xl p-8 border border-gray-800">
               <div className="flex items-start gap-4 mb-6">
                 <div className="w-12 h-12 bg-blue-700/40 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -88,7 +84,6 @@ const handleClick = () => {
               </div>
             </div>
 
-            {/* Instant Result Card */}
             <div className="bg-[#1A2035] rounded-xl p-8 border border-gray-800">
               <div className="flex items-start gap-4 mb-6">
                 <div className="w-12 h-12 bg-blue-700/40 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -119,7 +114,6 @@ const handleClick = () => {
             </div>
           </div>
 
-          {/* Dashboard Features */}
           <div className="bg-gradient-to-br from-[#1A2035] to-[#0F1525] rounded-2xl p-8 md:p-12 border border-gray-800">
             <div className="flex items-center gap-4 mb-8">
               <div className="w-14 h-14 bg-blue-700/40 rounded-lg flex items-center justify-center">
@@ -195,7 +189,6 @@ const handleClick = () => {
           </div>
         </section>
 
-        {/* Our Values */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
@@ -239,7 +232,6 @@ const handleClick = () => {
           </div>
         </section>
 
-        {/* CTA Section */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className=" rounded-2xl p-12 md:p-16 text-center">
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">

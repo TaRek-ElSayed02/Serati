@@ -9,7 +9,6 @@ export default function Home() {
     <div className="min-h-screen flex flex-col my-gradient " >
 
       <main className="flex-grow" dir="rtl">
-        {/* Hero Section */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
@@ -32,7 +31,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Stats Section */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-[#1A2035] p-8 rounded-xl text-center border border-gray-800">
@@ -50,7 +48,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Features Section */}
         <section id="features" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
@@ -95,7 +92,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* How It Works Section */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
@@ -139,7 +135,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* CTA Section */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 pb-20">
           <div className=" rounded-2xl p-12 md:p-16 text-center">
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
