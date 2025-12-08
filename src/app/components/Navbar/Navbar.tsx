@@ -344,11 +344,6 @@ const Navbar = () => {
           animation: slideDown 0.3s ease-out;
         }
 
-        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap');
-        
-        * {
-          font-family: 'Cairo', sans-serif;
-        }
       `}</style>
     </nav>
   );
