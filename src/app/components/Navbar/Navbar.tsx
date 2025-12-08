@@ -65,8 +65,8 @@ const Navbar = () => {
           {getInitials()}
         </div>
         {showName && (
-          <div className="hidden lg:block">
-            <p className="text-sm font-semibold text-white" style={{ fontFamily: 'cairo' }}>
+          <div className="lg:hidden">
+            <p className="text-md font-semibold text-white" style={{ fontFamily: 'cairo', color: 'white !important' }}>
               {getDisplayName()}
             </p>
           </div>
@@ -156,7 +156,7 @@ const Navbar = () => {
               <Link
                 href="/auth/login"
                 className="bg-white text-[#0A0F1F] px-6 py-2.5 rounded-xl font-bold transition-all hover:shadow-lg hover:scale-105"
-                style={{ fontFamily: 'cairo' }}
+                style={{ fontFamily: 'cairo',color:'#0A0F1F' }}
               >
                 تسجيل الدخول
               </Link>
@@ -317,7 +317,7 @@ const Navbar = () => {
                   href="/auth/login"
                   onClick={toggleDrawer}
                   className="flex items-center justify-center gap-2 w-full p-4 bg-white text-[#0A0F1F] rounded-xl font-bold hover:bg-gray-100 transition-all shadow-lg"
-                  style={{ fontFamily: 'cairo' }}
+                  style={{ fontFamily: 'cairo' ,color:'#0A0F1F' }}
                 >
                   <span>تسجيل الدخول</span>
                   <LogOut size={20} />
