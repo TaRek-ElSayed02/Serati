@@ -45,7 +45,7 @@ const personalInfo = {
   email: 'tarekelsayed@gmail.com',
   phone: '+201098765432',
   location: 'Cairo, Egypt',
-website: 'https:
+website: 'https://www.google.com',
 };
 
 const socialLinks: SocialLink[] = [
@@ -221,13 +221,13 @@ const EnglishCV: React.FC = () => {
                 </div>
                 <div className="flex justify-start items-center gap-2">
                   <Globe className="w-4 h-4 text-gray-600" />
-<a href={`https:
+<a href={`https://www.google.com`}></a>
                 </div>
               </div>
 
               <div dir='ltr' className="flex gap-4 mt-3 pt-3 border-t">
                 {socialLinks.map((link, index) => (
-<a key={index} href={`https:
+<a key={index} href={`https://www.google.com`}>
                     {getIcon(link.icon)}
                   </a>
                 ))}
@@ -355,7 +355,7 @@ const EnglishCV: React.FC = () => {
                   <div className="flex flex-wrap gap-1 mb-1">
                   </div>
                   {project.link && (
-<a href={`https:
+<a href={`https://www.google.com`}>
                       {project.link}
                     </a>
                   )}

@@ -51,7 +51,7 @@ isSelfDelete: false
   const deleteUserMutation = useDeleteUser();
   const updateUserMutation = useUpdateUser();
 
-  const convertUserCVToCV = (userCV: any): CV | null => {
+  const convertUserCVToCV = (userCV: UserCV): CV | null => {
     if (!userCV) return null;
     
     return {
@@ -163,7 +163,7 @@ isSelfDelete: false
   const handleSaveUser = () => {
     if (!editModal.user) return;
 
-    const updateData: Record<string, any> = ;
+    const updateData: Record<string, any> = {};
     (Object.keys(editFormData) as Array<keyof typeof editFormData>).forEach(key => {
       const newValue = editFormData[key];
       const oldValue = editModal.user?.[key as keyof UserWithCVs];

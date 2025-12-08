@@ -213,14 +213,14 @@ const ArabicCV: React.FC = () => {
                   <MapPin className="w-4 h-4 text-gray-600" />
                 </div>
                 <div className="flex items-center gap-2 justify-end">
-<a href={`https:
+<a href={`https://www.google.com`}></a>
                   <Globe className="w-4 h-4 text-gray-600" />
                 </div>
               </div>
               
               <div className="flex gap-4 mt-3 pt-3 border-t justify-end">
                 {socialLinks.map((link, index) => (
-<a key={index} href={`https:
+<a key={index} href={`https://www.google.com`}>
                     {getIcon(link.icon)}
                   </a>
                 ))}
@@ -348,7 +348,7 @@ const ArabicCV: React.FC = () => {
                   <div className="flex flex-wrap gap-1 mb-1 justify-end">
                   </div>
                   {project.link && (
-<a href={`https:
+<a href={`https://www.google.com`}>
                       {project.link}
                     </a>
                   )}
