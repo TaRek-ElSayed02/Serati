@@ -1,13 +1,15 @@
 'use client';
 import React from 'react';
 import { FileText, Zap, Download, CheckCircle, Star, ArrowRight } from 'lucide-react';
+import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 export default function Home() {
   const handleClick = () => {
     window.location.href = "/auth/register"
   };
   return (
     <div className="min-h-screen flex flex-col my-gradient " >
-
+<Navbar />
       <main className="flex-grow" dir="rtl">
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
           <div className="text-center">
@@ -149,7 +151,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-
+<Footer />
     </div>
   );
 }
