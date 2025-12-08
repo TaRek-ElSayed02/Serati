@@ -16,7 +16,7 @@ const handleClick = () => {
       
       <main className="flex-grow" dir="rtl">
         {/* Hero Section */}
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-0">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
               من نحن؟
@@ -61,7 +61,7 @@ const handleClick = () => {
             {/* Process Card */}
             <div className="bg-[#1A2035] rounded-xl p-8 border border-gray-800">
               <div className="flex items-start gap-4 mb-6">
-                <div className="w-12 h-12 bg-[#F59E0B] rounded-lg flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 bg-blue-700/40 rounded-lg flex items-center justify-center flex-shrink-0">
                   <FileText className="w-6 h-6 text-white" />
                 </div>
                 <div>
@@ -74,15 +74,15 @@ const handleClick = () => {
               </div>
               <div className="pr-16 space-y-3">
                 <div className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-[#F59E0B]" />
+                  <CheckCircle className="w-5 h-5 text-blue-600" />
                   <span className="text-gray-300">حقول ذكية تملأ تلقائياً</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-[#F59E0B]" />
+                  <CheckCircle className="w-5 h-5 text-blue-600" />
                   <span className="text-gray-300">اقتراحات لصياغة أفضل</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-[#F59E0B]" />
+                  <CheckCircle className="w-5 h-5 text-blue-600" />
                   <span className="text-gray-300">حفظ تلقائي للبيانات</span>
                 </div>
               </div>
@@ -91,7 +91,7 @@ const handleClick = () => {
             {/* Instant Result Card */}
             <div className="bg-[#1A2035] rounded-xl p-8 border border-gray-800">
               <div className="flex items-start gap-4 mb-6">
-                <div className="w-12 h-12 bg-[#F59E0B] rounded-lg flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 bg-blue-700/40 rounded-lg flex items-center justify-center flex-shrink-0">
                   <Zap className="w-6 h-6 text-white" />
                 </div>
                 <div>
@@ -104,15 +104,15 @@ const handleClick = () => {
               </div>
               <div className="pr-16 space-y-3">
                 <div className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-[#F59E0B]" />
+                  <CheckCircle className="w-5 h-5 text-blue-600" />
                   <span className="text-gray-300">معاينة مباشرة أثناء الكتابة</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-[#F59E0B]" />
+                  <CheckCircle className="w-5 h-5 text-blue-600" />
                   <span className="text-gray-300">تحميل بصيغة PDF عالية الجودة</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-[#F59E0B]" />
+                  <CheckCircle className="w-5 h-5 text-blue-600" />
                   <span className="text-gray-300">جاهزة للطباعة والإرسال</span>
                 </div>
               </div>
@@ -122,7 +122,7 @@ const handleClick = () => {
           {/* Dashboard Features */}
           <div className="bg-gradient-to-br from-[#1A2035] to-[#0F1525] rounded-2xl p-8 md:p-12 border border-gray-800">
             <div className="flex items-center gap-4 mb-8">
-              <div className="w-14 h-14 bg-[#F59E0B] rounded-lg flex items-center justify-center">
+              <div className="w-14 h-14 bg-blue-700/40 rounded-lg flex items-center justify-center">
                 <Layout className="w-7 h-7 text-white" />
               </div>
               <div>
@@ -143,8 +143,8 @@ const handleClick = () => {
               </div>
 
               <div className="bg-[#0A0F1F] rounded-lg p-6 border border-gray-800">
-                <div className="w-10 h-10 bg-[#bg-blue-700/20 rounded-lg flex items-center justify-center mb-4">
-                  <FileText className="w-5 h-5 text-[#F59E0B]" />
+                <div className="w-10 h-10 bg-blue-700/20 rounded-lg flex items-center justify-center mb-4">
+                  <FileText className="w-5 h-5 text-blue-600" />
                 </div>
                 <h4 className="text-lg font-bold text-white mb-2">سير متعددة</h4>
                 <p className="text-gray-400 text-sm">
@@ -154,7 +154,7 @@ const handleClick = () => {
 
               <div className="bg-[#0A0F1F] rounded-lg p-6 border border-gray-800">
                 <div className="w-10 h-10 bg-blue-700/20 rounded-lg flex items-center justify-center mb-4">
-                  <Palette className="w-5 h-5 text-[#F59E0B]" />
+                  <Palette className="w-5 h-5 text-blue-600" />
                 </div>
                 <h4 className="text-lg font-bold text-white mb-2">قوالب متنوعة</h4>
                 <p className="text-gray-400 text-sm">
@@ -164,7 +164,7 @@ const handleClick = () => {
 
               <div className="bg-[#0A0F1F] rounded-lg p-6 border border-gray-800">
                 <div className="w-10 h-10 bg-blue-700/20 rounded-lg flex items-center justify-center mb-4">
-                  <Shield className="w-5 h-5 text-[#F59E0B]" />
+                  <Shield className="w-5 h-5 text-blue-600" />
                 </div>
                 <h4 className="text-lg font-bold text-white mb-2">أمان البيانات</h4>
                 <p className="text-gray-400 text-sm">
@@ -174,7 +174,7 @@ const handleClick = () => {
 
               <div className="bg-[#0A0F1F] rounded-lg p-6 border border-gray-800">
                 <div className="w-10 h-10 bg-blue-700/20 rounded-lg flex items-center justify-center mb-4">
-                  <CheckCircle className="w-5 h-5 text-[#F59E0B]" />
+                  <CheckCircle className="w-5 h-5 text-blue-600" />
                 </div>
                 <h4 className="text-lg font-bold text-white mb-2">حفظ تلقائي</h4>
                 <p className="text-gray-400 text-sm">
@@ -184,7 +184,7 @@ const handleClick = () => {
 
               <div className="bg-[#0A0F1F] rounded-lg p-6 border border-gray-800">
                 <div className="w-10 h-10 bg-blue-700/20 rounded-lg flex items-center justify-center mb-4">
-                  <Users className="w-5 h-5 text-[#F59E0B]" />
+                  <Users className="w-5 h-5 text-blue-600" />
                 </div>
                 <h4 className="text-lg font-bold text-white mb-2">دعم مستمر</h4>
                 <p className="text-gray-400 text-sm">
@@ -209,7 +209,7 @@ const handleClick = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="w-20 h-20 bg-blue-700/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Zap className="w-10 h-10 text-[#F59E0B]" />
+                <Zap className="w-10 h-10 text-blue-600" />
               </div>
               <h3 className="text-2xl font-bold text-white mb-3">السهولة</h3>
               <p className="text-gray-300 leading-relaxed">
@@ -219,7 +219,7 @@ const handleClick = () => {
 
             <div className="text-center">
               <div className="w-20 h-20 bg-blue-700/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <CheckCircle className="w-10 h-10 text-[#F59E0B]" />
+                <CheckCircle className="w-10 h-10 text-blue-600" />
               </div>
               <h3 className="text-2xl font-bold text-white mb-3">الجودة</h3>
               <p className="text-gray-300 leading-relaxed">
@@ -229,7 +229,7 @@ const handleClick = () => {
 
             <div className="text-center">
               <div className="w-20 h-20 bg-blue-700/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Shield className="w-10 h-10 text-[#F59E0B]" />
+                <Shield className="w-10 h-10 text-blue-600" />
               </div>
               <h3 className="text-2xl font-bold text-white mb-3">الخصوصية</h3>
               <p className="text-gray-300 leading-relaxed">
