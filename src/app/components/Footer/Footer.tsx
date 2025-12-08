@@ -31,9 +31,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#0A0F1F] text-white">
       <div className="max-w-7xl mx-auto px-4 py-12">
-        {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8" dir="rtl">
-          {/* Logo and Description */}
           <div className="space-y-4">
             <Link href="/" className="inline-block">
               <Image 
@@ -52,7 +50,6 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Quick Links */}
           <div>
             <h4 className="text-lg font-semibold mb-4 text-[#4ECDC4]" style={{ fontFamily: 'Cairo' }}>
               روابط سريعة
@@ -72,7 +69,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Services */}
           <div>
             <h4 className="text-lg font-semibold mb-4 text-[#4ECDC4]" style={{ fontFamily: 'Cairo' }}>
               خدماتنا
@@ -92,7 +88,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Social Media */}
           <div>
             <h4 className="text-lg font-semibold mb-4 text-[#4ECDC4]" style={{ fontFamily: 'Cairo' }}>
               تواصل معنا
@@ -125,10 +120,8 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Divider */}
         <div className="border-t border-gray-600 my-6"></div>
 
-        {/* Bottom Footer */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-400 text-sm" style={{ fontFamily: 'Cairo' }}>
             © {new Date().getFullYear()} منصة سيرَتي. جميع الحقوق محفوظة
