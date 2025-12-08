@@ -6,7 +6,7 @@ import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone } from 'lucide-reac
 
 const Footer = () => {
   const logo = '/favicon.ico';
-  
+
   const footerLinks = {
     pages: [
       { name: 'الرئيسية', href: '/' },
@@ -32,16 +32,18 @@ const Footer = () => {
     <footer className="bg-[#0A0F1F] text-white">
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8" dir="rtl">
-          <div className="space-y-4">
-            <Link href="/" className="inline-block">
-              <Image 
-                src={logo} 
-                alt="لوجو سيرَتي"
-                width={60}
-                height={60}
-                className="w-15 h-15 object-contain hover:scale-110 transition-transform duration-300"
-              />
-            </Link>
+          <div className="space-y-3">
+            <div className="bg-white p-1 rounded-lg inline-block">
+              <Link href="/" className="inline-block">
+                <Image
+                  src={logo}
+                  alt="لوجو سيرَتي"
+                  width={60}
+                  height={60}
+                  className="w-15 h-15 object-contain hover:scale-110 transition-transform duration-300"
+                />
+              </Link>
+            </div>
             <h3 className="text-2xl font-bold" style={{ fontFamily: 'Cairo' }}>
               منصة سيرَتي
             </h3>
@@ -57,7 +59,7 @@ const Footer = () => {
             <ul className="space-y-2">
               {footerLinks.pages.map((link, index) => (
                 <li key={index}>
-                  <Link 
+                  <Link
                     href={link.href}
                     className="text-gray-300 hover:text-[#4ECDC4] transition-colors duration-300 text-sm"
                     style={{ fontFamily: 'Cairo' }}
@@ -76,7 +78,7 @@ const Footer = () => {
             <ul className="space-y-2">
               {footerLinks.services.map((link, index) => (
                 <li key={index}>
-                  <Link 
+                  <Link
                     href={link.href}
                     className="text-gray-300 hover:text-[#4ECDC4] transition-colors duration-300 text-sm"
                     style={{ fontFamily: 'Cairo' }}
@@ -94,13 +96,18 @@ const Footer = () => {
             </h4>
             <div className="space-y-3">
               <p className="text-gray-300 text-sm flex items-center gap-2" style={{ fontFamily: 'Cairo' }}>
-                <Mail size={16} className="text-[#4ECDC4]" />
-                info@serati.com
+                <a href="mailto:info@serati.com" className="flex items-center gap-2">
+                  <Mail size={16} className="text-[#4ECDC4]" />
+                  info@serati.com
+                </a>
               </p>
               <p className="text-gray-300 text-sm flex items-center gap-2" style={{ fontFamily: 'Cairo' }}>
-                <Phone size={16} className="text-[#4ECDC4]" />
-                +20 123 456 7890
+                <a href="tel:+201558166468" className="flex items-center gap-2">
+                  <Phone size={16} className="text-[#4ECDC4]" />
+                  +201558166468
+                </a>
               </p>
+
               <div className="flex gap-3 mt-4">
                 {footerLinks.social.map((social, index) => {
                   const IconComponent = social.icon;
@@ -127,15 +134,15 @@ const Footer = () => {
             © {new Date().getFullYear()} منصة سيرَتي. جميع الحقوق محفوظة
           </p>
           <div className="flex gap-6">
-            <Link 
-              href="/privacy" 
+            <Link
+              href="/privacy"
               className="text-gray-400 hover:text-[#4ECDC4] text-sm transition-colors"
               style={{ fontFamily: 'Cairo' }}
             >
               سياسة الخصوصية
             </Link>
-            <Link 
-              href="/terms" 
+            <Link
+              href="/terms"
               className="text-gray-400 hover:text-[#4ECDC4] text-sm transition-colors"
               style={{ fontFamily: 'Cairo' }}
             >

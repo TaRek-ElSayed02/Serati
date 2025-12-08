@@ -81,7 +81,7 @@ const Navbar = () => {
         <Link
           href={`/`}
           onClick={(e) => {
-            e.preventDefault();
+            
             onClose?.();
           }}
           className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-100 transition-all group"
@@ -97,7 +97,7 @@ const Navbar = () => {
         <Link
           href="/dashboard"
           onClick={(e) => {
-            e.preventDefault();
+            
             onClose?.();
           }}
           className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-100 transition-all group"
@@ -113,7 +113,7 @@ const Navbar = () => {
         <Link
           href="/"
           onClick={(e) => {
-            e.preventDefault();
+            
             onClose?.();
           }}
           className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-100 transition-all group"
